@@ -1,4 +1,4 @@
-const calculateDiscount = require('../src/calculateDiscount'); // Adjust the path as necessary
+const calculateDiscount = require('../calculateDiscount.js'); 
 
 describe('calculateDiscount', () => {
   it('should calculate the discounted amount correctly for valid inputs', () => {
@@ -16,6 +16,6 @@ describe('calculateDiscount', () => {
   });
 
   it('should round the discounted amount to two decimal places', () => {
-    expect(calculateDiscount(99.99, 33)).toBeCloseTo(66.66, 2);
+    expect(calculateDiscount(99.99, 33)).toBeCloseTo(66.99, 2);
   });
 });
