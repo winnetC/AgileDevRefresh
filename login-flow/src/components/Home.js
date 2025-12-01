@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'; // Import Link component from react-rou
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       <h2>Welcome to the Home Page!</h2>
       <Link to="/login">
         <button>Go to Login</button> {/* Button to navigate to Login */}
