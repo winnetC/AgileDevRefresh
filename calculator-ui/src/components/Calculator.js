@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../App.css';
 
 const Calculator = ({ onCalculate }) => {
   const [num1, setNum1] = useState('');
