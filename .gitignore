@@ -25,4 +25,3 @@ yarn-error.log*
 
 /calculator-api/package-lock.json
 /calculator-ui/package-lock.json
-/login-flow
