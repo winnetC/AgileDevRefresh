@@ -22,3 +22,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/calculator-api/package-lock.json
+/calculator-ui/package-lock.json
+/login-flow
