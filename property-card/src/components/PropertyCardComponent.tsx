@@ -51,7 +51,7 @@ const propertyCards: Array<{
   },
   {
     key: 5,
-    image: stylishApartmentImage, // Replace with the actual image variable or path
+    image: stylishApartmentImage, 
     title: "Apartment",
     price: "150,000",
     buttonText: "View Details",
@@ -59,7 +59,7 @@ const propertyCards: Array<{
   },
   {
     key: 6,
-    image: urbanLoftImage, // Replace with the actual image variable or path
+    image: urbanLoftImage, 
     title: "Urban Loft",
     price: "$400,000",
     buttonText: "View Details",
@@ -67,7 +67,7 @@ const propertyCards: Array<{
   },
   {
     key: 7,
-    image: sunnyBeachHouseImage, // Replace with the actual image variable or path
+    image: sunnyBeachHouseImage, 
     title: "Beach House",
     price: "$999,999",
     buttonText: "View Details",
@@ -75,7 +75,7 @@ const propertyCards: Array<{
   },
   {
     key: 8,
-    image: rusticCabinImage, // Replace with the actual image variable or path
+    image: rusticCabinImage, 
     title: "Cabin",
     price: "$200,000",
     buttonText: "View Details",

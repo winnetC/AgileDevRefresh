@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { Button, Card, CardContent, CardMedia } from '@mui/material';
 
 interface PropertyCardProps {
   key: number;
