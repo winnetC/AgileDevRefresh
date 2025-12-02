@@ -14,8 +14,8 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({ image, title, price,
   const isLarge = variant === 'large';
 
   return (
-    <Card className={`flex flex-col ${isLarge ? 'w-80' : 'w-48'} p-4 border border-gray-200 shadow-md hover:shadow-xl transition-shadow`}
-        elevation={0}  // Remove shadow
+    <Card className={`grid grid-cols-1 ${isLarge ? 'w-full sm:w-60' : 'w-full sm:w-48'} sm:p-4 p-6 border border-gray-200 shadow-md hover:shadow-xl transition-shadow`}
+        elevation={0}
         style={{ borderRadius: '8px ',
             border: '1px solid black'
          }} 
@@ -24,21 +24,26 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({ image, title, price,
             component="img" 
             alt={title} 
             image={image} 
-            className="object-cover h-40 rounded-md transition-transform hover:scale-105" 
+            className="object-cover sm:h-40 h-60 rounded-md transition-transform hover:scale-105" 
         />
-        <CardContent>
-            <Typography variant="h6" component="div" className="text-black">
+        <CardContent className="p-0 m-0">
+            <p className="text-black font-bold text-lg">
             {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" className="text-black">
+            </p>
+            <p 
+                className="text-yellow-700 font-normal"
+                style={{ color: isLarge ? 'maroon' : 'black',
+                    fontWeight: isLarge ? 'bold' : 'normal'
+                }} 
+             >
             {price}
-            </Typography>
+            </p>
         </CardContent>
         <Button variant="contained"
             className="mt-auto transition-transform hover:scale-105"
-            style={{ border: '1px solid black',
+            style={{ border: isLarge ? 'none' : '1px solid black',
                 color: 'white',
-                backgroundColor: 'black'
+                backgroundColor: isLarge ? 'brown' : 'black'
              }} 
         >
             {buttonText}
