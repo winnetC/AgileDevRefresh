@@ -1,6 +1,5 @@
 import React from 'react';
-import PropertyCard from './Card';
-import { Property } from './Card';
+import PropertyCard, { Property } from './Card';
 import luxuryApartmentImage from '../images/luxury-apartment.png';
 import cozyCottageImage from '../images/cozy-cottage.jpg';
 import quaintBungalowImage from '../images/quaint-bungalow.png';
@@ -24,7 +23,7 @@ const propertyDetails: Property[] = [
 const PropertyCardPage = () => {
   return (
     <div className="flex flex-col justify-start sm:flex-row sm:flex-wrap gap-4">
-      <PropertyCard propertyDetails={propertyDetails} /> {/* Pass the entire array */}
+      <PropertyCard propertyDetails={propertyDetails} />
     </div>
   );
 };
