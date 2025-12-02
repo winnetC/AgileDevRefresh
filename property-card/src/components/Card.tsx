@@ -22,7 +22,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ propertyDetails }) => {
 
         return (
           <Card
-            key={property.title} // Assuming title is unique; otherwise, use a different key (like id)
+            key={property.title} 
             className={`grid grid-cols-1 ${isLarge ? 'w-full sm:w-80' : 'w-full sm:w-48'} sm:p-4 p-6 border border-gray-200 shadow-md hover:shadow-xl transition-shadow`}
             elevation={0}
             style={{
