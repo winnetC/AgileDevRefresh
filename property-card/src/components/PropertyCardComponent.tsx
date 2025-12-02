@@ -10,14 +10,14 @@ import sunnyBeachHouseImage from '../images/sunny-beachouse.png';
 import rusticCabinImage from '../images/rustic-cabin.jpg';
 
 const propertyDetails: Property[] = [
-  { key: 1, image: luxuryApartmentImage, title: "Penthouse", price: "$1,300,000", variant: "large" },
-  { key: 2, image: cozyCottageImage, title: "Cottage", price: "$150,000", variant: "small" },
-  { key: 3, image: quaintBungalowImage, title: "Bungalow", price: "$250,000", variant: "small" },
-  { key: 4, image: modernVillaImage, title: "Villa", price: "$850,000", variant: "large" },
-  { key: 5, image: stylishApartmentImage, title: "Apartment", price: "$150,000", variant: "small" },
-  { key: 6, image: urbanLoftImage, title: "Urban Loft", price: "$400,000", variant: "large" },
-  { key: 7, image: sunnyBeachHouseImage, title: "Beach House", price: "$999,999", variant: "large" },
-  { key: 8, image: rusticCabinImage, title: "Cabin", price: "$200,000", variant: "small" },
+  { key: 1, image: luxuryApartmentImage, title: "Penthouse", price: "$1,300,000", variant: "large", details: "A luxurious penthouse with stunning city views." },
+  { key: 2, image: cozyCottageImage, title: "Cottage", price: "$150,000", variant: "small", details: "" },
+  { key: 3, image: quaintBungalowImage, title: "Bungalow", price: "$250,000", variant: "small", details: "" },
+  { key: 4, image: modernVillaImage, title: "Villa", price: "$850,000", variant: "large", details: "A modern villa with spacious living areas." },
+  { key: 5, image: stylishApartmentImage, title: "Apartment", price: "$150,000", variant: "small", details: "" },
+  { key: 6, image: urbanLoftImage, title: "Urban Loft", price: "$400,000", variant: "large", details: "An urban loft featuring contemporary design." },
+  { key: 7, image: sunnyBeachHouseImage, title: "Beach House", price: "$999,999", variant: "large", details: "A beautiful beach house perfect for relaxation." },
+  { key: 8, image: rusticCabinImage, title: "Cabin", price: "$200,000", variant: "small", details: "" },
 ];
 
 const PropertyCardPage = () => {
