@@ -10,7 +10,7 @@ const db = drizzle(process.env.DATABASE_URL!);
 
 interface PropertyRequestBody {
     title: string;
-    price: number; // assuming price is a numeric value
+    price: number; 
     status: 'available' | 'sold' | 'pending';
 }
 
