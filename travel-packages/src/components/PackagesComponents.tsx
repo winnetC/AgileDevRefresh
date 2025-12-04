@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import packagesData from '../data/packages.json';
 import { Package } from '../types/packages';
 
-const Packages: React.FC = () => {
+const PackagesComponent: React.FC = () => {
   const [packages, setPackages] = useState<Package[]>([]);
   const [filters, setFilters] = useState<{ price: string; location: string; category: string }>({
     price: '',
@@ -70,4 +70,4 @@ const Packages: React.FC = () => {
   );
 };
 
-export default Packages;
+export default PackagesComponent;
