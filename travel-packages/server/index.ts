@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import data from './data/packages.json';
+import data from './data/international-packages.json';
 
 const app = express();
 app.use(cors());

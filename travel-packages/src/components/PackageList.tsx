@@ -12,7 +12,7 @@ const PackageList: React.FC<PackageListProps> = ({ packages, filters }) => {
   const filteredPackages = packages.filter(pkg => {
     const withinPrice = !filters.price || pkg.price <= parseFloat(filters.price);
     const matchesLocation = !filters.location || pkg.location.toLowerCase().includes(filters.location.toLowerCase());
-    const matchesCategory = !filters.category || pkg.category.toLowerCase() === filters.category.toLowerCase();
+    const matchesCategory = !filters.category || pkg.category.toLowerCase().includes(filters.category.toLowerCase());
 
     return withinPrice && matchesLocation && matchesCategory;
   });
@@ -23,7 +23,7 @@ const PackageList: React.FC<PackageListProps> = ({ packages, filters }) => {
         filteredPackages.map(pkg => (
           <div className="package-card" key={pkg.id}>
             <h2>{pkg.title}</h2>
-            <p>{pkg.description}</p>
+            <p className="package-card-desc">{pkg.description}</p>
             <p><strong>{pkg.price} USD</strong></p>
             <p>Location: {pkg.location}</p>
             <p>Category: {pkg.category}</p>

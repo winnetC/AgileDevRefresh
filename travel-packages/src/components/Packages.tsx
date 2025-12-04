@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useSWR from 'swr';
-import packagesData from '../data/packages.json'; // Adjust the path if necessary
+import packagesData from '../data/local-packages.json';
 import Filter from './Filter';
 import PackageList from './PackageList';
 import { Package } from '../types/packages';
@@ -44,7 +44,6 @@ const PackagesComponent: React.FC = () => {
         Switch to {useApi ? 'JSON' : 'API'} Data
       </button>
 
-      {/* Conditional text below the button */}
       <p className="data-source-text">
         {useApi ? 'International' : 'Local'}
       </p>
