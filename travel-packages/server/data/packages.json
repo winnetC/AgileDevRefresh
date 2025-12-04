@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Beach Getaway",
+    "price": 299,
+    "location": "Hawaii",
+    "category": "beach",
+    "description": "Enjoy a sunny vacation on the beautiful beaches of Hawaii."
+  },
+  {
+    "id": 2,
+    "title": "Mountain Adventure",
+    "price": 399,
+    "location": "Colorado",
+    "category": "mountain",
+    "description": "Experience thrilling hikes and breathtaking views."
+  }
+]
