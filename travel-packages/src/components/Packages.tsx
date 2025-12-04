@@ -4,6 +4,7 @@ import packagesData from '../data/packages.json'; // Adjust the path if necessar
 import Filter from './Filter';
 import PackageList from './PackageList';
 import { Package } from '../types/packages';
+import '../App.css';
 
 const fetcher = (url: string) => fetch(url).then(res => res.json());
 
@@ -38,14 +39,23 @@ const PackagesComponent: React.FC = () => {
   return (
     <div>
       <h1>Travel Packages</h1>
-      <button onClick={() => setUseApi(prev => !prev)}>
+
+      <button className="toggle-button" onClick={() => setUseApi(prev => !prev)}>
         Switch to {useApi ? 'JSON' : 'API'} Data
       </button>
+
+      {/* Conditional text below the button */}
+      <p className="data-source-text">
+        {useApi ? 'International' : 'Local'}
+      </p>
+
       <Filter
         filters={filters}
         setFilters={useApi ? setApiFilters : setJsonFilters}
       />
+
       <PackageList packages={packagesToDisplay} filters={filters} />
+
     </div>
   );
 };

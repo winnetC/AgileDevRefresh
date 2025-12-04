@@ -1,5 +1,6 @@
 import React from 'react';
 import { Package } from '../types/packages';
+import '../App.css'; 
 
 interface PackageListProps {
   packages: Package[];
@@ -17,21 +18,21 @@ const PackageList: React.FC<PackageListProps> = ({ packages, filters }) => {
   });
 
   return (
-    <ul>
+    <div className="card-container">
       {filteredPackages.length > 0 ? (
         filteredPackages.map(pkg => (
-          <li key={pkg.id}>
+          <div className="package-card" key={pkg.id}>
             <h2>{pkg.title}</h2>
             <p>{pkg.description}</p>
-            <p>{pkg.price} USD</p>
+            <p><strong>{pkg.price} USD</strong></p>
             <p>Location: {pkg.location}</p>
             <p>Category: {pkg.category}</p>
-          </li>
+          </div>
         ))
       ) : (
         <p>No packages match your filters.</p>
       )}
-    </ul>
+    </div>
   );
 };
 

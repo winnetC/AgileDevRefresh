@@ -1,26 +1,82 @@
 [
   {
     "id": 1,
-    "title": "X Getaway",
-    "price": 99,
-    "location": "Hawaii",
+    "title": "Beach Getaway",
+    "price": 299,
+    "location": "California",
     "category": "beach",
-    "description": "Enjoy a sunny vacation on the beautiful beaches of Hawaii."
+    "description": "Enjoy a sunny vacation on the beautiful beaches of California."
   },
   {
     "id": 2,
-    "title": "Y Adventure",
-    "price": 699,
+    "title": "Mountain Retreat",
+    "price": 350,
     "location": "Colorado",
     "category": "mountain",
-    "description": "Experience thrilling hikes and breathtaking views."
+    "description": "Relax and unwind in a cozy mountain cabin in Colorado."
   },
   {
     "id": 3,
-    "title": "Z City Lights",
-    "price": 199,
-    "location": "New York",
+    "title": "Wine Tour",
+    "price": 100,
+    "location": "Napa Valley, CA",
+    "category": "food",
+    "description": "Discover exquisite wines on a delightful tour of Napa Valley."
+  },
+  {
+    "id": 4,
+    "title": "Cultural Festival",
+    "price": 150,
+    "location": "New Orleans",
+    "category": "cultural",
+    "description": "Experience the vibrant culture at the New Orleans Jazz Festival."
+  },
+  {
+    "id": 5,
+    "title": "Nature Hike",
+    "price": 50,
+    "location": "Yosemite National Park, CA",
+    "category": "nature",
+    "description": "Explore the breathtaking trails of Yosemite National Park."
+  },
+  {
+    "id": 6,
+    "title": "City Exploration",
+    "price": 125,
+    "location": "San Francisco",
     "category": "city",
-    "description": "Explore the vibrant city life and iconic landmarks."
+    "description": "See the sights of San Francisco, including the Golden Gate Bridge."
+  },
+  {
+    "id": 7,
+    "title": "Beach Camping",
+    "price": 75,
+    "location": "Florida",
+    "category": "camping",
+    "description": "Camp under the stars on the beautiful beaches of Florida."
+  },
+  {
+    "id": 8,
+    "title": "Desert Adventure",
+    "price": 140,
+    "location": "Arizona",
+    "category": "adventure",
+    "description": "Enjoy an exciting adventure in the vast Arizona desert."
+  },
+  {
+    "id": 9,
+    "title": "Historical Tour",
+    "price": 80,
+    "location": "Philadelphia",
+    "category": "historical",
+    "description": "Learn about the rich history of Philadelphia on a guided tour."
+  },
+  {
+    "id": 10,
+    "title": "Wildlife Watching",
+    "price": 90,
+    "location": "Everglades, FL",
+    "category": "nature",
+    "description": "Experience the unique wildlife of the Everglades."
   }
 ]

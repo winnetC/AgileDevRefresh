@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 interface Filters {
   price: string;

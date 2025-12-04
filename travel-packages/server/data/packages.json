@@ -9,10 +9,74 @@
   },
   {
     "id": 2,
-    "title": "Mountain Adventure",
-    "price": 399,
-    "location": "Colorado",
-    "category": "mountain",
-    "description": "Experience thrilling hikes and breathtaking views."
+    "title": "Ski Trip",
+    "price": 450,
+    "location": "Chamonix, France",
+    "category": "ski",
+    "description": "Experience world-class skiing in the stunning French Alps."
+  },
+  {
+    "id": 3,
+    "title": "Cultural Tour",
+    "price": 1200,
+    "location": "Rome, Italy",
+    "category": "cultural",
+    "description": "Immerse yourself in the rich history and culture of Rome."
+  },
+  {
+    "id": 4,
+    "title": "Safari Adventure",
+    "price": 2000,
+    "location": "Maasai Mara, Kenya",
+    "category": "adventure",
+    "description": "Join an exhilarating safari in the Maasai Mara to see the Big Five."
+  },
+  {
+    "id": 5,
+    "title": "Tropical Retreat",
+    "price": 800,
+    "location": "Bali, Indonesia",
+    "category": "wellness",
+    "description": "Rejuvenate your body and soul in a luxurious tropical retreat."
+  },
+  {
+    "id": 6,
+    "title": "Island Hopping",
+    "price": 600,
+    "location": "Greece",
+    "category": "beach",
+    "description": "Explore the beautiful islands of Greece in this unforgettable tour."
+  },
+  {
+    "id": 7,
+    "title": "Historical Experience",
+    "price": 1500,
+    "location": "Machu Picchu, Peru",
+    "category": "cultural",
+    "description": "Visit the iconic archaeological site of Machu Picchu."
+  },
+  {
+    "id": 8,
+    "title": "Adventure in Peru",
+    "price": 1300,
+    "location": "Amazon Rainforest, Brazil",
+    "category": "adventure",
+    "description": "Discover the diverse wildlife of the Amazon Rainforest."
+  },
+  {
+    "id": 9,
+    "title": "Luxurious City Escape",
+    "price": 2500,
+    "location": "Paris, France",
+    "category": "luxury",
+    "description": "Experience the elegance and charm of Paris in this lavish getaway."
+  },
+  {
+    "id": 10,
+    "title": "Wildlife Expedition",
+    "price": 900,
+    "location": "Galapagos Islands",
+    "category": "adventure",
+    "description": "Explore the unique wildlife of the Galapagos Islands."
   }
 ]
