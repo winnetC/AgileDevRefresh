@@ -1,18 +1,26 @@
 [
   {
     "id": 1,
-    "title": "Beach Getaway",
-    "price": 299,
+    "title": "X Getaway",
+    "price": 99,
     "location": "Hawaii",
     "category": "beach",
     "description": "Enjoy a sunny vacation on the beautiful beaches of Hawaii."
   },
   {
     "id": 2,
-    "title": "Mountain Adventure",
-    "price": 399,
+    "title": "Y Adventure",
+    "price": 699,
     "location": "Colorado",
     "category": "mountain",
     "description": "Experience thrilling hikes and breathtaking views."
+  },
+  {
+    "id": 3,
+    "title": "Z City Lights",
+    "price": 199,
+    "location": "New York",
+    "category": "city",
+    "description": "Explore the vibrant city life and iconic landmarks."
   }
 ]

@@ -1,5 +1,5 @@
 import './App.css';
-import PackagesComponent from './components/PackagesComponents';
+import PackagesComponent from './components/Packages';
 
 function App() {
   return (
