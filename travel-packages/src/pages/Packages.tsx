@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import useSWR from 'swr';
 import packagesData from '../data/local-packages.json';
-import Filter from './Filter';
-import PackageList from './PackageList';
-import Sort from './Sort';
+import Filter from '../components/Filter';
+import PackageList from '../components/PackageList';
+import Sort from '../components/Sort';
 import { Package } from '../types/packages';
 import '../App.css';
 
 const fetcher = (url: string) => fetch(url).then(res => res.json());
 
-const PackagesComponent: React.FC = () => {
+const Packages: React.FC = () => {
   const [useApi, setUseApi] = useState<boolean>(true);
   const { data: apiPackages, error } = useSWR<Package[]>(useApi ? 'http://localhost:5000/api/packages' : null, fetcher);
   const [jsonPackages, setJsonPackages] = useState<Package[]>([]);
 
-  const [apiFilters, setApiFilters] = useState<{ price: string; location: string; category: string }>({
+  const [apiFilters] = useState<{ price: string; location: string; category: string }>({
     price: '',
     location: '',
     category: '',
@@ -30,14 +30,20 @@ const PackagesComponent: React.FC = () => {
   const [sortBy, setSortBy] = useState<string>(''); // Sort state
 
   useEffect(() => {
-    setJsonPackages(packagesData); // Load packages data from JSON
+    setJsonPackages(packagesData.slice().reverse()); // Reverse local packages
   }, []);
 
   if (error) return <div>Error loading API packages.</div>;
   if (useApi && !apiPackages) return <div>Loading API packages...</div>;
 
-  // Packages to display
-  const packagesToDisplay = useApi ? apiPackages || [] : jsonPackages;
+  // Determine packages to display using if conditions for clarity
+  let packagesToDisplay: Package[];
+
+  if (useApi) {
+    packagesToDisplay = apiPackages ? apiPackages.slice().reverse() : []; // Reverse API packages or use empty array
+  } else {
+    packagesToDisplay = jsonPackages; // Use local JSON packages
+  }
   const filters = useApi ? apiFilters : jsonFilters;
 
   return (
@@ -76,4 +82,4 @@ const PackagesComponent: React.FC = () => {
   );
 };
 
-export default PackagesComponent;
+export default Packages;

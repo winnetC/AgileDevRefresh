@@ -78,5 +78,13 @@
     "location": "Everglades, FL",
     "category": "nature",
     "description": "Experience the unique wildlife of the Everglades."
+  },
+  {
+    "id": 11,
+    "title": "Bird Viewing",
+    "price": 50,
+    "location": "Napa Valley, CA",
+    "category": "nature",
+    "description": "Experience the unique bird species of Napa Valley."
   }
 ]
