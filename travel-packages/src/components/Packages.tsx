@@ -3,6 +3,7 @@ import useSWR from 'swr';
 import packagesData from '../data/local-packages.json';
 import Filter from './Filter';
 import PackageList from './PackageList';
+import Sort from './Sort';
 import { Package } from '../types/packages';
 import '../App.css';
 
@@ -25,6 +26,9 @@ const PackagesComponent: React.FC = () => {
     category: '',
   });
 
+  const [searchTerm, setSearchTerm] = useState<string>(''); // Search term state
+  const [sortBy, setSortBy] = useState<string>(''); // Sort state
+
   useEffect(() => {
     setJsonPackages(packagesData); // Load packages data from JSON
   }, []);
@@ -32,7 +36,7 @@ const PackagesComponent: React.FC = () => {
   if (error) return <div>Error loading API packages.</div>;
   if (useApi && !apiPackages) return <div>Loading API packages...</div>;
 
-  // Fallback to an empty array if packages are undefined
+  // Packages to display
   const packagesToDisplay = useApi ? apiPackages || [] : jsonPackages;
   const filters = useApi ? apiFilters : jsonFilters;
 
@@ -48,13 +52,26 @@ const PackagesComponent: React.FC = () => {
         {useApi ? 'International' : 'Local'}
       </p>
 
-      <Filter
-        filters={filters}
-        setFilters={useApi ? setApiFilters : setJsonFilters}
-      />
+      {/* Conditional rendering for search input and filters */}
+      {useApi ? (
+        <>
+          <input
+            type="text"
+            placeholder="Search Packages..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="search-input"
+          />
+          <Sort sortBy={sortBy} setSortBy={setSortBy} />
+        </>
+      ) : (
+        <Filter
+          filters={filters}
+          setFilters={setJsonFilters} // Only use setJsonFilters for local data
+        />
+      )}
 
-      <PackageList packages={packagesToDisplay} filters={filters} />
-
+      <PackageList packages={packagesToDisplay} filters={filters} searchTerm={searchTerm} sortBy={sortBy} /> {/* Pass sortBy */}
     </div>
   );
 };

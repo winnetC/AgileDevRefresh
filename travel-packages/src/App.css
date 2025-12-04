@@ -58,14 +58,40 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
-  max-width: 200px; /* Set a max width for the input fields */
+  max-width: 200px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: border-color 0.2s;
 }
 
 input:focus {
-  border-color: #007bff; /* Change border color on focus */
+  border-color: #007bff;
   outline: none;
+}
+
+/* Sort styling for Sort component  */
+
+.sort-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort-container label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.sort-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.sort-container select:focus {
+  border-color: #007bff;
 }
 
 /* Button styling for Packages component */
@@ -107,7 +133,13 @@ input:focus {
   }
 
   input {
-    max-width: 100%; /* Allow full width on smaller screens */
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-input {
+    max-width: 90%; /* Allow full width on smaller screens */
+    margin-inline: 10px;
     margin-bottom: 10px;
   }
 }
