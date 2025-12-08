@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Luxury Apartment",
+    "description": "A beautiful luxury apartment with an ocean view.",
+    "price": 250000,
+    "location": "Miami",
+    "category": "Property"
+  },
+  {
+    "id": 2,
+    "title": "Cozy Cottage",
+    "description": "A quaint cottage in the countryside.",
+    "price": 150000,
+    "location": "New Hampshire",
+    "category": "Property"
+  },
+  {
+    "id": 3,
+    "title": "Modern Loft",
+    "description": "A sleek modern loft in the city.",
+    "price": 175000,
+    "location": "New York",
+    "category": "Property"
+  }
+]
