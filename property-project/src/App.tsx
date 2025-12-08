@@ -6,9 +6,9 @@ const App: React.FC = () => {
     return (
         <div className="App">
             <header className="App-header">
-                <h1 className="text-2xl font-bold h-[5vh]">Property Listings</h1>
+                <h1 className="text-2xl font-bold">Property Listings</h1>
             </header>
-            <main className='h-[80vh]'>
+            <main className=''>
                 <PropertyListTDD />
             </main>
         </div>

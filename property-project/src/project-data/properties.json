@@ -22,5 +22,61 @@
     "price": 175000,
     "location": "New York",
     "category": "Property"
+  },
+  {
+    "id": 4,
+    "title": "Family Home",
+    "description": "A spacious family home with a large garden.",
+    "price": 300000,
+    "location": "California",
+    "category": "Property"
+  },
+  {
+    "id": 5,
+    "title": "Urban Studio",
+    "description": "A compact studio apartment close to downtown.",
+    "price": 120000,
+    "location": "Chicago",
+    "category": "Property"
+  },
+  {
+    "id": 6,
+    "title": "Beach House",
+    "description": "A charming beach house with direct ocean access.",
+    "price": 400000,
+    "location": "Hawaii",
+    "category": "Property"
+  },
+  {
+    "id": 7,
+    "title": "Penthouse Suite",
+    "description": "An exclusive penthouse with luxury amenities.",
+    "price": 600000,
+    "location": "Los Angeles",
+    "category": "Property"
+  },
+  {
+    "id": 8,
+    "title": "Countryside Villa",
+    "description": "A picturesque villa surrounded by nature.",
+    "price": 350000,
+    "location": "Vermont",
+    "category": "Property"
+  },
+  {
+    "id": 9,
+    "title": "Modern Duplex",
+    "description": "A stylish duplex with contemporary design.",
+    "price": 280000,
+    "location": "Seattle",
+    "category": "Property"
+  },
+  {
+    "id": 10,
+    "title": "Charming Bungalow",
+    "description": "A cozy bungalow with vintage charm.",
+    "price": 175000,
+    "location": "Oregon",
+    "category": "Property"
   }
 ]
