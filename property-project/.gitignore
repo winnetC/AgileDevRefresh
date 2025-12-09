@@ -6,6 +6,7 @@
 .pnp.js
 
 package-lock.json
+/property-project-backend/node_modules
 
 # testing
 /coverage
