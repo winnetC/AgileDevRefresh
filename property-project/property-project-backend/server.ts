@@ -3,18 +3,17 @@ import * as fs from 'node:fs/promises'; // Use promises for file operations
 import path from 'node:path'; // Use node:path for path utilities
 import type { Request, Response } from 'express';
 
-// Define __dirname using import.meta.url
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Endpoint to read properties data
 app.get('/properties', async (req: Request, res: Response) => {
-    const dataPath = path.join(__dirname, 'project-data', 'properties.json');
-    
+    // Construct the path to the properties JSON file
+    const dataPath = path.join('..', '..', 'property-project', 'src', 'project-data', 'properties.json');
+
     try {
-        const data = await fs.readFile(dataPath, 'utf8'); // Using promise-based API
+        // Read the JSON file
+        const data = await fs.readFile(dataPath, 'utf8');
         const properties = JSON.parse(data);
         res.json(properties);
     } catch (err) {

@@ -10,6 +10,7 @@
     "module": "esnext",
     "target": "es2020",
     "types": [],
+    "moduleResolution": "Node",
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -42,6 +43,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
     "outDir": "./dist"
   },
     "include": ["**/*.ts"],
